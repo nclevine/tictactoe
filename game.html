@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <meta charset='UTF-8'>
+    <title>Tic Tac Toe</title>
+    <link href='http://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="tictactoe.css">
+
+  </head>
+
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <h2 id='result'></h2>
+    <div id='gameboard'>
+      <div class='gamecell' id='topleft' data-occupied="false"></div>
+      <div class='gamecell' id='topcenter' data-occupied="false"></div>
+      <div class='gamecell' id='topright' data-occupied="false"></div>
+      <div class='clear'></div>
+      <div class='gamecell' id='middleleft' data-occupied="false"></div>
+      <div class='gamecell' id='middlecenter' data-occupied="false"></div>
+      <div class='gamecell' id='middleright' data-occupied="false"></div>
+      <div class='clear'></div>
+      <div class='gamecell' id='bottomleft' data-occupied="false"></div>
+      <div class='gamecell' id='bottomcenter' data-occupied="false"></div>
+      <div class='gamecell' id='bottomright' data-occupied="false"></div>
+      <div class='clear'></div>
+    </div>
+    <button id='restartButton'>Restart</button>
+    <script src='gamemechanics.js'></script>
+
+  </body>
+</html>

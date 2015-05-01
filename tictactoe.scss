@@ -1,0 +1,88 @@
+$darkgreen: #002800;
+$borderz: 1px solid chartreuse;
+$game-cell-width: 100px;
+$boardfont: 'Quicksand', sans-serif;
+$title: 'Fontdiner Swanky', cursive;
+$backgroundz: transparent;
+$hover-backgroundz: seagreen; 
+$result-height: 60px;
+$font-colorz: seagreen;
+$hover-font-colorz: chartreuse;
+$transition-timerz: 0.5s;
+
+body{
+  background: $darkgreen;
+  font-family: $boardfont;
+  color: seagreen;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h1{
+  font-family: $title;
+  margin: 0;
+}
+
+#result{
+  margin: 0 0 15px 0;
+  height: $result-height;
+  color: chartreuse;
+  font-size: $result-height;
+  font-weight: 700;
+}
+
+#gameboard{
+  margin: 0 auto;
+  width: 3 * $game-cell-width + 2;
+  height: 3 * $game-cell-width + 2;
+}
+
+button{
+  margin-top: 20px;
+  font-family: $boardfont;
+  font-size: 1em;
+  border: $borderz;
+  color: $font-colorz;
+  background: $backgroundz;
+  transition: background $transition-timerz, color $transition-timerz;
+  &:hover{
+    background: $hover-backgroundz;
+    color: $hover-font-colorz;
+  }
+}
+
+.gamecell{
+  float: left;
+  width: $game-cell-width;
+  height: $game-cell-width;
+  background: $backgroundz;
+  color: $font-colorz;
+  font-weight: 700;
+  transition: background $transition-timerz, color $transition-timerz;
+  p{
+    margin: -10px 0 0 0;
+    font-size: 2.3em;
+  }
+  &:hover{
+    background: $hover-backgroundz;
+    color: $hover-font-colorz;
+  }
+}
+
+#middlecenter{
+  border: $borderz;
+}
+
+#topcenter, #bottomcenter{
+  border-left: $borderz;
+  border-right: $borderz;
+}
+
+#middleleft, #middleright{
+  border-top: $borderz;
+  border-bottom: $borderz;
+}
+
+.clear{
+  clear:both
+}

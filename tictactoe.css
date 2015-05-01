@@ -1,0 +1,65 @@
+body {
+  background: #002800;
+  font-family: "Quicksand", sans-serif;
+  color: seagreen;
+  font-size: 2.5em;
+  text-align: center; }
+
+h1 {
+  font-family: "Fontdiner Swanky", cursive;
+  margin: 0; }
+
+#result {
+  margin: 0 0 15px 0;
+  height: 60px;
+  color: chartreuse;
+  font-size: 60px;
+  font-weight: 700; }
+
+#gameboard {
+  margin: 0 auto;
+  width: 302px;
+  height: 302px; }
+
+button {
+  margin-top: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  border: 1px solid chartreuse;
+  color: seagreen;
+  background: transparent;
+  transition: background 0.5s, color 0.5s; }
+  button:hover {
+    background: seagreen;
+    color: chartreuse; }
+
+.gamecell {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  color: seagreen;
+  font-weight: 700;
+  transition: background 0.5s, color 0.5s; }
+  .gamecell p {
+    margin: -10px 0 0 0;
+    font-size: 2.3em; }
+  .gamecell:hover {
+    background: seagreen;
+    color: chartreuse; }
+
+#middlecenter {
+  border: 1px solid chartreuse; }
+
+#topcenter, #bottomcenter {
+  border-left: 1px solid chartreuse;
+  border-right: 1px solid chartreuse; }
+
+#middleleft, #middleright {
+  border-top: 1px solid chartreuse;
+  border-bottom: 1px solid chartreuse; }
+
+.clear {
+  clear: both; }
+
+/*# sourceMappingURL=tictactoe.css.map */
